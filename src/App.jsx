@@ -6,6 +6,7 @@ function App() {
     <>
       <Learn1 />      
       <h1>multiple elements can be sent with help of fragments</h1>
+      <h1>git commit</h1>
     </>
   )
 }
