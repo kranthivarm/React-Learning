@@ -5,9 +5,24 @@ import "./index.css"
 
 import App from './App'
 
+import SliderPage from './pswdGen/slider'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import CombinedPage from './routingApi\'s/combinedPage'
+import HomePage from './routingApi\'s/homepage'
+import Games from './routingApi\'s/games'
+const routers= createBrowserRouter(
+    createRoutesFromElements(
+        <Route path ='/' element={<CombinedPage/>}>
+            <Route path ='' element={<HomePage/>}/>
+            <Route path='games' element={<Games/>}/>
+        </Route>
+    )
+)
 
 createRoot(document.getElementById('root')).render(
-    <App text="Tailwind"/>
+    // <App text="Tailwind"/>
+    // <SliderPage/>
+    <RouterProvider router={routers} />
 )
 
 // //beginging 

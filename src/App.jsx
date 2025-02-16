@@ -3,7 +3,8 @@
 import React from "react";
 import { useState } from "react";
 import CardFun from './components/card.jsx'
-// @import "tailwindcss";
+import { BgColChange } from "./components/bgColoChange.jsx";
+
 
 export default function App({text="xxx"}){
     const propDim={
@@ -17,6 +18,8 @@ export default function App({text="xxx"}){
                 source="https://imgs.search.brave.com/6vlvJOkXbwclM-_oS2r0WSD0qstDH2APVGhM5W8G-wo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ViLzlh/LzBlL2ViOWEwZWE1/M2IxZTI0MTFhODdl/NzRkMzRhNDE0ZTI4/LmpwZw" 
                 dim={propDim}
             />
+
+            <BgColChange/>
         </>
     );
 }
